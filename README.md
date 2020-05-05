@@ -9,7 +9,7 @@ An Observer library implementation. Implements the Observer library interface.
 
 ## Documentation
 
-- Refer the Implementation's  
+- Refer the Implementation's 
 [Homepage](https://docs.diligentsoftware.org/observer-1/implementation).
 
 ## Contributing

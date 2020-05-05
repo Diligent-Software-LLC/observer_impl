@@ -22,11 +22,11 @@ class Observer < ObserverInt
 
   # self.type(identifier = nil).
   # @description
-  #   Predicate. Verifies an identifier is an Observable identifier.
+  #   Predicate. Verifies an identifier is an observable identifier.
   # @param identifier [.]
   #   Any identifier.
   # @return [TrueClass, FalseClass]
-  #   True in the case the identifier is an Observable type. False otherwise.
+  #   True in the case the identifier is an observable type. False otherwise.
   def self.type(identifier = nil)
     return observable().include?(identifier)
   end
@@ -37,7 +37,7 @@ class Observer < ObserverInt
   # @param instance [.]
   #   Any instance.
   # @return [TrueClass, FalseClass]
-  #   True in the case the argument is an Observable type, it is an
+  #   True in the case the argument is an observable type, it is an
   #   Observer's subject, and its state changed. False otherwise.
   def self.changed(instance = nil)
 
@@ -89,7 +89,7 @@ class Observer < ObserverInt
   # @description
   #   Notifies the appropriate Observer kind an instance's state changed.
   # @param instance [.]
-  #   An Observable instance.
+  #   An observable instance.
   # @return [NilClass]
   #   nil.
   def self.notify(instance = nil)
@@ -107,7 +107,7 @@ class Observer < ObserverInt
   # @description
   #   Gets the corresponding type's observer.
   # @param instance [.]
-  #   Any instance.
+  #   Any observable instance.
   # @return [.]
   #   The argument's corresponding observer identifier.
   # @raise [ArgumentError]
