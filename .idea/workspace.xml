@@ -26,8 +26,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1ef685b-1549-4d71-a1a9-b8ddd39b84ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/observer_impl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/observer_impl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/Changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/observer_impl.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/observer_impl.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/observer_impl/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/observer_impl/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/observer_impl.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/observer_impl.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/observer_impl_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/observer_impl_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +42,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="306" />
+    <option name="myElementSize" value="385" />
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OPEN_IN_BROWSER" value="true" />
     <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/coverage" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1bPtskBgnGyywg6t3odYSbzyLmL" />
@@ -61,6 +74,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
     <property name="ytplugin.issueListCompactView" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/artifacts" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mkdir artifacts" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="ObserverTest" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true" nameIsGenerated="true">
@@ -112,7 +135,9 @@
       <workItem from="1588545765605" duration="47000" />
       <workItem from="1588614071542" duration="6579000" />
       <workItem from="1588715015568" duration="15000" />
-      <workItem from="1588715099302" duration="4398000" />
+      <workItem from="1588715099302" duration="4887000" />
+      <workItem from="1589562081788" duration="1662000" />
+      <workItem from="1589719349842" duration="7078000" />
     </task>
     <task id="LOCAL-00001" summary="Setup Complete&#10;&#10;Added version.rb. Added Gem Specification. Added README.md.">
       <created>1588615143360</created>
@@ -135,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588718639438</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Prepare Deployment&#10;&#10;Fixed README.md's Documentation section bug. Fixed documentation.">
+      <created>1588721614630</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588721614630</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <YouTrack url="https://macbook-pro.local:8443">
         <option name="defaultSearch" value="project: Observer Subsystem:{ No Subsystem } Component: Implementation Sprints: 1 State:{ Prepare Deployment} " />
@@ -151,7 +183,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -161,7 +195,8 @@
     <MESSAGE value="Setup Complete&#10;&#10;Added version.rb. Added Gem Specification. Added README.md." />
     <MESSAGE value="Development Complete&#10;&#10;Added 'Observer.observable()', 'Observer.changed(instance = nil)', 'Observer.type(identifier = nil)', 'Observer.notify(pub_i = nil)', 'Observer.add_subject(subject = nil)', 'Observer.remove_subject(subject = nil)', and 'Observer.kind_observer(instance = nil)'. Added test coverage. Added test constants." />
     <MESSAGE value="Prepare Deployment&#10;&#10;Deleted Travis CI deployment settings. Updated Changelog.md." />
-    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Deleted Travis CI deployment settings. Updated Changelog.md." />
+    <MESSAGE value="Prepare Deployment&#10;&#10;Fixed README.md's Documentation section bug. Fixed documentation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Prepare Deployment&#10;&#10;Fixed README.md's Documentation section bug. Fixed documentation." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -169,40 +204,44 @@
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="438" y="175" key="#Servers/0.23.1680.975@0.23.1680.975" timestamp="1588545791670" />
-    <state x="158" y="112" width="1414" height="795" key="CommitChangelistDialog2" timestamp="1588718639242">
+    <state x="158" y="112" width="1414" height="795" key="CommitChangelistDialog2" timestamp="1588721614376">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="158" y="112" width="1414" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1588718639242" />
-    <state width="1545" height="269" key="GridCell.Tab.0.bottom" timestamp="1588718044738">
+    <state x="158" y="112" width="1414" height="795" key="CommitChangelistDialog2/0.23.1680.975@0.23.1680.975" timestamp="1588721614376" />
+    <state width="1545" height="269" key="GridCell.Tab.0.bottom" timestamp="1589732361669">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1545" height="269" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1588718044738" />
-    <state width="1545" height="269" key="GridCell.Tab.0.center" timestamp="1588718044738">
+    <state width="1545" height="269" key="GridCell.Tab.0.bottom/0.23.1680.975@0.23.1680.975" timestamp="1589732361669" />
+    <state width="1545" height="269" key="GridCell.Tab.0.center" timestamp="1589732361669">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1545" height="269" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1588718044738" />
-    <state width="1545" height="269" key="GridCell.Tab.0.left" timestamp="1588718044737">
+    <state width="1545" height="269" key="GridCell.Tab.0.center/0.23.1680.975@0.23.1680.975" timestamp="1589732361669" />
+    <state width="1545" height="269" key="GridCell.Tab.0.left" timestamp="1589732361669">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1545" height="269" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1588718044737" />
-    <state width="1545" height="269" key="GridCell.Tab.0.right" timestamp="1588718044738">
+    <state width="1545" height="269" key="GridCell.Tab.0.left/0.23.1680.975@0.23.1680.975" timestamp="1589732361669" />
+    <state width="1545" height="269" key="GridCell.Tab.0.right" timestamp="1589732361669">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state width="1545" height="269" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1588718044738" />
-    <state x="442" y="250" key="Vcs.Push.Dialog.v2" timestamp="1588718685806">
+    <state width="1545" height="269" key="GridCell.Tab.0.right/0.23.1680.975@0.23.1680.975" timestamp="1589732361669" />
+    <state x="442" y="250" key="Vcs.Push.Dialog.v2" timestamp="1588721774063">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="442" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1588718685806" />
+    <state x="442" y="250" key="Vcs.Push.Dialog.v2/0.23.1680.975@0.23.1680.975" timestamp="1588721774063" />
     <state x="430" y="235" width="816" height="550" key="find.popup" timestamp="1588614302188">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
     <state x="430" y="235" width="816" height="550" key="find.popup/0.23.1680.975@0.23.1680.975" timestamp="1588614302188" />
-    <state x="503" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1588718464697">
+    <state x="507" y="235" width="670" height="675" key="run.anything.popup" timestamp="1588721866476">
       <screen x="0" y="23" width="1680" height="975" />
     </state>
-    <state x="503" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1588718464697" />
+    <state x="507" y="235" width="670" height="675" key="run.anything.popup/0.23.1680.975@0.23.1680.975" timestamp="1588721866476" />
+    <state x="503" y="237" width="670" height="676" key="search.everywhere.popup" timestamp="1589732428116">
+      <screen x="0" y="23" width="1680" height="975" />
+    </state>
+    <state x="503" y="237" width="670" height="676" key="search.everywhere.popup/0.23.1680.975@0.23.1680.975" timestamp="1589732428116" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/observer_impl@ObserverTest.rcov" NAME="ObserverTest Coverage Results" MODIFIED="1588717968230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="observer_impl" />
+    <SUITE FILE_PATH="coverage/observer_impl@ObserverTest.rcov" NAME="ObserverTest Coverage Results" MODIFIED="1589732357705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="observer_impl" />
   </component>
 </project>

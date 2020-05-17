@@ -41,13 +41,16 @@ class Observer < ObserverInt
   #   Observer's subject, and its state changed. False otherwise.
   def self.changed(instance = nil)
 
-    if (!type(instance.class()))
+    unless (type(instance.class()))
       return false
     else
 
       k_o   = kind_observer(instance)
       k_o_i = k_o.instance()
-      return (k_o_i.subject(instance) && k_o_i.changed(instance))
+      case
+      when k_o.equal?(NodeObserver)
+        return (k_o_i.subject(instance) && k_o_i.changed_node(instance))
+      end
 
     end
 
@@ -92,14 +95,20 @@ class Observer < ObserverInt
   #   An observable instance.
   # @return [NilClass]
   #   nil.
+  # @raise [ArgumentError]
+  #   In the case 'instance' is not an observable instance.
   def self.notify(instance = nil)
 
     ic_identifier = instance.class()
     if (type(ic_identifier))
+
       k_o = kind_observer(instance)
-      k_o.receive_change(instance)
+      k_o.subject_changed(instance)
+      return nil
+
+    else
+      raise(ArgumentError, "#{instance} is not an observable instance.")
     end
-    return nil
 
   end
 
@@ -124,7 +133,7 @@ class Observer < ObserverInt
 
   end
 
-  # Private Constants.
+  # Private constants.
   OBSERVABLE = Set[Node].freeze()
   private_constant :OBSERVABLE
 

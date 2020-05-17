@@ -38,6 +38,7 @@ GEM
       node_error (~> 3)
       node_int (~> 2)
     node_int (2.3.0)
+    node_observer_impl (0.1.0)
     observer_int (0.1.0)
     rake (13.0.1)
     simplecov (0.18.5)
@@ -52,6 +53,7 @@ DEPENDENCIES
   bundler (~> 2.1)
   minitest (~> 5.0)
   node (~> 4)
+  node_observer_impl (~> 0)
   observer_impl!
   observer_int (~> 0)
   rake (~> 13.0)

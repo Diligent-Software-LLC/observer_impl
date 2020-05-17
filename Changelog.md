@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.2.0, 2020-05-17
+
+### Added
+
+- node_observer_impl developmental dependency.
+- Test coverage.
+
+### Edited
+
+- 'Observer.notify(instance = nil)'. Raises an error in the case the argument
+ is not an observable instance.
+
+### Fixed
+
+- 'Observer.changed(instance = nil' bug. In the case an unobservable object
+ was argued, 'Observer.kind_observer(instance = nil)' raised an ArgumentError.
+
 ## v0.1.0, 2020-05-05
 
 ### Added

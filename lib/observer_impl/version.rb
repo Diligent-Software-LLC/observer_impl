@@ -8,5 +8,5 @@ require 'observer_int'
 #   An Observer library implementation. Implements the Observer library
 #   interface.
 class Observer < ObserverInt
-  VERSION = '0.1.0'.freeze()
+  VERSION = '0.2.0'.freeze()
 end
